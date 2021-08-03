@@ -13,11 +13,15 @@ SNH trains config['no_models'] number of different models. The i-th model's trai
 ## Example
 The folder data contains two datasets: CABS_SFS.npy (from [1]) and gowalla_SF.npy (from [2]). We consider releasing CABS_SFS.npy with differential privacy while using gowalla_SF.npy as an auxiliary public dataset. Calling python run.py performs training and testing with this setting. For example, the result of the zero-th trained model will be written in tests/test_sf_cabs/0/out.txt. A sample output for that file is 
 
-Creating model for query size 0.2375±0.0375 % of query space
-Preparing training data
-Calculating training weights
-initializing the model
-training
+>Creating model for query size 0.2375±0.0375 % of query space
+>
+>Preparing training data
+>
+>Calculating training weights
+>
+>initializing the model
+>
+>training
 >100 Loss: 537.3705 mae: 26.526931762695312 rel. error: 0.11166811734437943  time : 8.425718907266855
 >
 >200 Loss: 416.01135 mae: 23.483247756958008 rel. error: 0.10002146661281586  time : 13.059221280738711
