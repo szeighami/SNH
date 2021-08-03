@@ -124,4 +124,5 @@ The folder data contains two datasets: CABS_SFS.npy (from [1]) and gowalla_SF.np
 
 ## References
 [1] Michal Piorkowski, Natasa Sarafijanovic-Djukic, and Matthias Grossglauser. 2009.CRAWDAD data set epfl/mobility (v. 2009-02-24)
+
 [2] Eunjoon Cho, Seth A Myers, and Jure Leskovec. 2011. Friendship and mobility:user movement in location-based social networks. InProceedings of the 17thACM SIGKDD international conference on Knowledge discovery and data mining.1082–1090
