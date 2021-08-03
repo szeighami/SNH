@@ -1,5 +1,5 @@
 # SNH
-This repository contains the implementation of Spatial Neural Histograms that answers RCQs on a dataset while preserving differential privacy. Neural networks are trained using JAX and are used to answer RCQs.
+This repository contains the implementation of Spatial Neural Histograms to answer range count queries on a geospatial dataset while preserving differential privacy. Neural networks are trained using JAX and are used to answer RCQs.
 
 ## Instalation and requirements
 This implimentation requires has been tested with the following python libraries: JAX version 0.2.12, Numpy version 1.19.5, Pandas version 1.0.1 and Haiku 0.0.4
