@@ -1,5 +1,5 @@
 # SNH
-This repository contains the implementation of Spatial Neural Histograms to answer range count queries on a geospatial dataset while preserving differential privacy. Neural networks are trained using JAX and are used to answer RCQs.
+This repository contains the implementation of Spatial Neural Histograms [1] to answer range count queries on a geospatial dataset while preserving differential privacy. Neural networks are trained using JAX and are used to answer RCQs.
 
 ## Instalation and requirements
 This implimentation requires has been tested with the following python libraries: JAX version 0.2.12, Numpy version 1.19.5, Pandas version 1.0.1 and Haiku 0.0.4
@@ -11,7 +11,7 @@ Running SNH can be done by calling python run.py. SNH configureations are set in
 SNH trains config['no_models'] number of different models. The i-th model's training and testing statistic is written in the file tests/config['NAME']/i/out.txt
 
 ## Example
-The folder data contains two datasets: CABS_SFS.npy (from [1]) and gowalla_SF.npy (from [2]). We consider releasing CABS_SFS.npy with differential privacy while using gowalla_SF.npy as an auxiliary public dataset. Calling python run.py performs training and testing with this setting. For example, the result of the zero-th trained model will be written in tests/test_sf_cabs/0/out.txt. A sample output for that file is 
+The folder data contains two datasets: CABS_SFS.npy (from [2]) and gowalla_SF.npy (from [3]). We consider releasing CABS_SFS.npy with differential privacy while using gowalla_SF.npy as an auxiliary public dataset. Calling python run.py performs training and testing with this setting. For example, the result of the zero-th trained model will be written in tests/test_sf_cabs/0/out.txt. A sample output for that file is 
 
 >Creating model for query size 0.2375±0.0375 % of query space
 >
@@ -123,6 +123,8 @@ The folder data contains two datasets: CABS_SFS.npy (from [1]) and gowalla_SF.np
 >5000 Loss: 32.029076 mae: 15.157988548278809 rel. error: 0.06545406579971313  time : 233.40768042951822
 
 ## References
-[1] Michal Piorkowski, Natasa Sarafijanovic-Djukic, and Matthias Grossglauser. 2009.CRAWDAD data set epfl/mobility (v. 2009-02-24)
+[1] Sepanta Zeighami, Ritesh Ahuja, Gabriel Ghinita, and Cyrus Shahabi, “A neural database for differentially private spatialrange queries, arXiv preprint: https://arxiv.org/abs/2108.01496
 
-[2] Eunjoon Cho, Seth A Myers, and Jure Leskovec. 2011. Friendship and mobility:user movement in location-based social networks. InProceedings of the 17thACM SIGKDD international conference on Knowledge discovery and data mining.1082–1090
+[2] Michal Piorkowski, Natasa Sarafijanovic-Djukic, and Matthias Grossglauser. 2009.CRAWDAD data set epfl/mobility (v. 2009-02-24)
+
+[3] Eunjoon Cho, Seth A Myers, and Jure Leskovec. 2011. Friendship and mobility:user movement in location-based social networks. In Proceedings of the 17thACM SIGKDD international conference on Knowledge discovery and data mining.1082–1090
