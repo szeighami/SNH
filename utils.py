@@ -8,6 +8,17 @@ from jax.lib import pytree
 from jax.tree_util import tree_flatten, tree_multimap, tree_unflatten
 import jax.numpy as jnp
 from rtree import index
+from scipy.stats import entropy
+
+def get_auxiliary_features(filename): 
+        _bins = 512
+        aux_data = np.load(filename)
+        H, xedges, yedges = np.histogram2d(aux_data[:, 0], aux_data[:, 1], bins=_bins)
+        x_probs = np.true_divide(H,np.sum(H)) # convert the histogram to probability
+        x_probs = x_probs.ravel() # flatten
+        ent = entropy(x_probs) # shannon entropy
+#         print('Determined feature for dataset ',filename, ' of size ', np.sum(H), ' at binning ', _bins, ' entropy: ', ent)
+        return ent
 
 class Log():
     def __init__(self):
