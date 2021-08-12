@@ -1,6 +1,6 @@
 
 # feature_generation notebook 
-Notebook discussed how to generate features for model training discusses.
+Notebook discusses how to generate features for model training.
 File city_features_fromGW.csv saves the features once generated.
 
 # model_traninig notebook
