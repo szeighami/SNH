@@ -84,8 +84,7 @@ def calc_metrics(model, params, batch, metrics, logs, model_query_size,  weights
         val = metric.calc(y_true, y_pred) # nonunifrom test set
         logs.add(metric.name, val[0])
 
-
-
+# TODO::: write new get_train_test_categorical function foir ADULT dataset. 
 
 def get_train_test(data_loc, cell_width, max_val, augmented_query_size, utilization_range, test_size, dim, eps, test_query_loc, db, min_vals, max_vals, random_seed):
     #max_dist_thres = 0.32
