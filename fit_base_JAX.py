@@ -13,8 +13,6 @@ from jax.experimental import optimizers
 import jax.numpy as jnp
 from utils import Log, MAE, SAE, mse_weighted_loss, calc_metrics,  get_train_test, get_training_weights
 
-
-
 with open('conf.json') as f:
     config = json.load(f) 
     max_val = config['MAX_VAL']
@@ -38,9 +36,12 @@ with open('conf.json') as f:
     random_seed = config['random_seed']
 
 
+# read data from file
 db = np.load(data_loc)[:max_data_size]
 n = db.shape[0]
 
+
+# convert it into -5 to 5 catesian range projection.
 min_vals = np.min(db, axis=0)
 max_vals = np.max(db, axis=0)
 db = ((db-min_vals)/(max_vals-min_vals)-0.5)*max_val
