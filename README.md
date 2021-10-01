@@ -5,14 +5,17 @@ This repository contains the implementation of Spatial Neural Histograms [1] to 
 
 #### Install conda environment and python targets:
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+
 sh Miniconda3-latest-Linux-x86_64.sh
 
 #### create a python target and source into python enivorment
 conda create -n [name_of_enviornment] python=3.8
+
 conda activate [name_of_enviornment]
 
 #### install jax lib 0.1.71 with CUDA support (without GPU is also okay, ~10x performance penalty with 15 core CPU) 
 wget https://storage.googleapis.com/jax-releases/cuda111/jaxlib-0.1.71+cuda111-cp38-none-manylinux2010_x86_64.whl
+
 pip install jaxlib-0.1.71+cuda111-cp38-none-manylinux2010_x86_64.whl
 
 #### install other libraries
