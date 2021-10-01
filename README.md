@@ -2,7 +2,22 @@
 This repository contains the implementation of Spatial Neural Histograms [1] to answer range count queries on a geospatial dataset while preserving differential privacy. Neural networks are trained using JAX and are used to answer RCQs.
 
 ## Instalation and requirements
-This implimentation requires has been tested with the following python libraries: JAX version 0.2.12, Numpy version 1.19.5, Pandas version 1.0.1 and Haiku 0.0.4
+
+## Instalation and requirements
+### Install conda environment and python targets:
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+sh Miniconda3-latest-Linux-x86_64.sh
+
+### create a python target and source into python enivorment
+conda create -n [name_of_enviornment] python=3.8
+conda activate [name_of_enviornment]
+
+### install jax lib 0.1.71 with CUDA support (without GPU is also okay, ~10x performance penalty with 15 core CPU) 
+wget https://storage.googleapis.com/jax-releases/cuda111/jaxlib-0.1.71+cuda111-cp38-none-manylinux2010_x86_64.whl
+pip install jaxlib-0.1.71+cuda111-cp38-none-manylinux2010_x86_64.whl
+
+### install other libraries
+pip install jax==0.2.12 numpy pandas dm-haiku sklearn rtree
 
 ## Running SNH
 Running SNH can be done by calling python run.py. SNH configureations are set in run.py, through the python dictionary config. Specifically, the dictionary contains a key 'NAME'. When calling python run.py, the code creates the folder tests/config['NAME'], where the result of the experiment is written. Explanation of each of the configurations is available in file run.py.
