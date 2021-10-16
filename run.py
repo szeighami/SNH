@@ -15,7 +15,7 @@ config['NAME'] = 'test_sf_cabs'  # Experiment name, the output will be written i
 
 config['data_loc'] = curr_dir+"/data/CABS_SFS.npy"  # path to private dataset
 config['n'] = 217438  # private dataset size
-config['eps'] = 0.2  # privacy budget
+config['eps'] = 0.05  # privacy budget
 
 config['q_w_loc'] = curr_dir+"/data/gowalla_SF.npy"# path to auiliary public dataset, q_w
 

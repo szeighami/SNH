@@ -1,0 +1,35 @@
+Creating model for query size 0.3125±0.0375 % of query space
+Preparing training data
+grid_val_noisy [[  2.05454655  11.25567165]
+ [ 18.3054135  -37.4273692 ]] (344, 344)
+xx [[-5.03125 -5.03125]
+ [-5.00195 -5.00195]] (344, 344)
+yy [[-5.03125 -5.00195]
+ [-5.03125 -5.00195]] (344, 344)
+total_cells 344
+total_in_cell 342
+augmented_query_size 0.03125
+cell_width 0.029300000000000073
+qs [-5.015625 -5.015625] (116281, 2)
+answer_len 1
+extra_len 0.0019499999999999275
+test_queries_lb[0] before clip:  [-5.03125 -5.03125]
+test_queries_ru[0] before clip:  [-5. -5.]
+test_queries_lu[0]  [-5.03125 -5.     ]
+test_queries_rb[0]  [-5.      -5.03125]
+test_indx_lb[0]  [0. 0.] [0 0]
+test_indx_ru[0]  [1.0665529 1.0665529] [1 1]
+lb_intersection  [-5.00195 -5.00195]
+rb_intersection  [-5.00195 -5.00195]
+lu_intersection  [-5.00195 -5.00195]
+ru_intersection  [-5.00195 -5.00195]
+area_lb  0.0008584900000000061 1.0000000000000022
+area_rb  5.713499999999716e-05 0.06655290102388714
+area_lu  5.713499999999716e-05 0.06655290102388714
+area_ru  3.8024999999995956e-06 0.00442928863469531
+non empty vals len(q[rows, cols]) 4
+[1.         0.0665529  0.0665529  0.00442929]
+ress_np [ 3.8561459  9.074418   4.734557   1.0254052 -2.4077437]
+len(ress_np) 116281
+time taken to generate 116281 training queries 56.36699604988098 seconds
+ress [3.8561459 9.074418  4.734557  1.0254052 0.       ] (116281,)

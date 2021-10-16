@@ -1,0 +1,31 @@
+Creating model for query size 0.3875±0.0375 % of query space
+Preparing training data
+grid_val_noisy [[  2.05454655  11.25567165]
+ [ 18.3054135  -37.4273692 ]] (344, 344)
+xx [[-5.03875 -5.03875]
+ [-5.00945 -5.00945]] (344, 344)
+yy [[-5.03875 -5.00945]
+ [-5.03875 -5.00945]] (344, 344)
+total_cells 344
+total_in_cell 342
+augmented_query_size 0.03875
+cell_width 0.029300000000000073
+qs [-5.019375 -5.019375] (116281, 2)
+answer_len 1
+extra_len 0.009449999999999927
+test_queries_lb[0] before clip:  [-5.03875 -5.03875]
+test_queries_ru[0] before clip:  [-5. -5.]
+test_queries_lu[0]  [-5.03875 -5.     ]
+test_queries_rb[0]  [-5.      -5.03875]
+test_indx_lb[0]  [0. 0.] [0 0]
+test_indx_ru[0]  [1.3225256 1.3225256] [1 1]
+lb_intersection  [-5.00945 -5.00945]
+rb_intersection  [-5.00945 -5.00945]
+lu_intersection  [-5.00945 -5.00945]
+ru_intersection  [-5.00945 -5.00945]
+area_lb  0.0008584900000000061 1.0000000000000022
+area_rb  0.0002768850000000063 0.32252559726963026
+area_lu  0.0002768850000000063 0.32252559726963026
+area_ru  8.930250000000342e-05 0.10402276089413152
+non empty vals len(q[rows, cols]) 4
+[1.         0.3225256  0.3225256  0.10402276]
